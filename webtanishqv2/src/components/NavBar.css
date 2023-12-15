@@ -1,0 +1,47 @@
+#navBarWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(255, 222, 89);
+}
+
+#logo{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+#navBarComps{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navBarNavigs{
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+
+.navBarNavigsDot{
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 7px;
+}
+
+.gbutton{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    background-color: #2f98d4;
+    outline: none;
+    padding: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 60px;
+    border: none;
+}

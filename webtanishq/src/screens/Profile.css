@@ -1,0 +1,62 @@
+#profileMainDiv{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#accountPageLogo{
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+#profileContainerMail{
+    color: white;
+    font-size: 25px;
+    font-family: 'Poppins',sans-serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#profilePanel{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 20px;
+}
+
+.profilePanelSingle{
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: .3px solid rgb(110, 110, 110);
+    transition: inherit;
+    transition-duration: 1s;
+}
+
+.profilePanelSingle:nth-child(2):hover{
+    background-color: rgba(224, 224, 224, 0.3);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.profilePanelSingle:nth-child(3):hover{
+    background-color: rgba(224, 224, 224, 0.3);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+#profileContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    filter: drop-shadow(0 0 200px #FFDE59);
+}
