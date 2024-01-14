@@ -1,0 +1,139 @@
+body{
+    padding: 0;
+    background-color: #222222;
+}
+
+#mainDiv{
+    width: 100%;
+    background-color: #222222;
+    box-sizing: border-box;
+    padding: 60px;
+    padding-top: 40px;
+    scroll-behavior: smooth;
+}
+
+#verify_account_cap{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+@media only screen and (max-width: 1048px) {
+    #mainDiv{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@keyframes verify_mainer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#verify_mainer{
+    animation: verify_mainer 2s;
+}
+
+#verifyHead{
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 17px;
+}
+
+#verifyPanelWrapper{
+    width: 300px;
+}
+
+#verifyPanel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 160px yellow);
+}
+
+.verify_input_wrapper{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.verify_input_helper{
+    color: white;
+    font-size: 12px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.verify_input_error{
+    background-color: tomato;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+#verify_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.verify_input_wrapper input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.session_button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    font-family: 'Poppins';
+    font-size: 17px;
+    transition: inherit;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.session_button:hover{
+    background-color: rgba(0, 0, 0, .9);
+    transform: scale(1.06);
+}
+
+#verify_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
+}

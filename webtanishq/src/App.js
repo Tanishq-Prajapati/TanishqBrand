@@ -350,14 +350,6 @@ function App() {
                   <div className='a_service_data'>
                     User Experience (UX) extends beyond the visual aspects, delving into the overall interaction and satisfaction users derive from a website or application.                    </div>
                 </div>
-                <div className='a_service'>
-                  <div className='a_service_head'>
-                    CW
-                  </div>
-                  <div className='a_service_data'>
-                    Content writing is the art of creating engaging and informative text for various mediums, such as websites, blogs, or social media.
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -42,7 +42,7 @@
 
 #mainDiv{
   width: 100%;
-  background-color: #222222;
+  background-color: #3c3828;
   box-sizing: border-box;
   padding: 60px;
   padding-top: 40px;
@@ -227,7 +227,6 @@ color: #000;
   border-radius: 7px;
   height: 5px;
   background: #FFDE59;
-  filter: drop-shadow(0 0 10px #FFDE59) brightness(1.3);
 }
 
 #mybarBackWrapper{
@@ -289,7 +288,6 @@ color: #000;
 #my_logo{
   width: 250px;
   border-radius: 100%;
-  filter: drop-shadow(0 0 100px #38B6FF) brightness(1);
 }
 
 #about_context{
@@ -304,15 +302,12 @@ color: #000;
 @keyframes about_contact_filter {
   0%{
     color: #FFDE59;
-    filter: drop-shadow(0 0 25px) brightness(1);
   }
   25%{
     color: #38B6FF;
-    filter: drop-shadow(0 0 25px) brightness(1);
   }
   75%{
     color: tomato; 
-    filter: drop-shadow(0 0 25px) brightness(1);
   }
 }
 
@@ -414,7 +409,7 @@ color: #000;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: .3;
+  flex: .4;
 }
 
 .a_service{
@@ -429,12 +424,14 @@ color: #000;
   align-items: center;
   flex: 1;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  gap: 20px;
 }
 
 .a_service_head{
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);
-  font-size: 30px;
+  font-size: 35px;
   padding: 30px;
   justify-content: center;
   align-items: center;
@@ -442,9 +439,10 @@ color: #000;
   color: white;
   font-family: 'Poppins';
   font-weight: 600;
-  border-radius: 10px;
   backdrop-filter: blur(10px);
-  margin: 10px;
+  margin-left: 20px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 #services_main{
@@ -456,7 +454,7 @@ color: #000;
   border-radius: 10px;
   transition: inherit;
   transition-duration: 1s;
-}
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}
 
 #services_main:hover{
   transform: scale(1.2), rotate(20deg);
@@ -465,7 +463,7 @@ color: #000;
 .a_service_data{
   color: white;
   padding: 10px;
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Poppins';
 }
 
@@ -528,7 +526,7 @@ color: #000;
   padding: 30px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
-  filter: drop-shadow(0 0 300px #FFDE59);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contact_div_logo{
@@ -611,6 +609,7 @@ color: #000;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .designs_div_horizontal_reverse{
@@ -619,6 +618,7 @@ color: #000;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .designs_div_vertical{
@@ -627,6 +627,7 @@ color: #000;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   flex: 1;
 }
 
@@ -670,7 +671,6 @@ color: #000;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  filter: drop-shadow(0 0 700px #FFDE59);
 }
 
 .designs_img_hori{
@@ -696,10 +696,18 @@ color: #000;
   font-family: 'Poppins',sans-serif;
   font-size: 17px;
   text-transform: capitalize;
-  font-weight: 600;
-  border-radius: 10px;
+  font-weight: 500;
+  border-radius: 30px;
   margin-top: 20px;
   cursor: pointer;
+  transition: inherit;
+  transition-duration: 0.5s;
+  transform-origin: 100px;
+}
+
+.designbutton:hover{
+  background-color: white;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1086px){
@@ -838,7 +846,6 @@ color: #000;
   display: flex;
   flex-direction: row;
   white-space: nowrap;
-  filter: drop-shadow(0 0 50px #38B6FF);
   font-family: 'Poppins',sans-serif;
   font-weight: 600;
   cursor: pointer;
